@@ -1,0 +1,8 @@
+input SalaryDecimalOperatorsFilterUpdateOneUserInput {
+    """ gt """
+    gt: BSONDecimal
+    """ in """
+    in: [BSONDecimal]
+    " nin "
+    nin: [BSONDecimal]
+}

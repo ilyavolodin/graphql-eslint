@@ -1,0 +1,22 @@
+{
+  "name": "@graphql-eslint/parser",
+  "version": "0.0.1",
+  "description": "GraphQL parser for ESLint",
+  "main": "src/index.js",
+  "author": "Ilya Volodin",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest --coverage"
+  },
+  "peerDependencies": {
+    "eslint": "^7.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.1.0",
+    "jest": "^26.0.1"
+  },
+  "dependencies": {
+    "graphql": "^15.0.0"
+  }
+}

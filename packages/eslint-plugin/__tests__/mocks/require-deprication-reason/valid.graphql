@@ -1,0 +1,17 @@
+type test {
+    field1: String @authorized
+    field2: Number
+    field4: String @deprecated(reason: "Reason")
+}
+
+enum testEnum {
+    item1 @authorized
+    item2 @deprecated(reason: "Reason")
+    item3
+}
+
+interface testInterface {
+    field1: String @authorized
+    field2: Number
+    field3: String @deprecated(reason: "Reason")
+}

@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": ".",
+			"name": "root"
+		}, {
+			"path": "./packages/parser",
+			"name": "parser"
+		}, {
+			"path": "./packages/eslint-plugin",
+			"name": "plugin"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}

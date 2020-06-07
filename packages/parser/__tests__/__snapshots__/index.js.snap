@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parser parseForESLint() should return ast and tokens 1`] = `
+Object {
+  "comments": Array [],
+  "definitions": Array [
+    Object {
+      "description": Object {
+        "block": true,
+        "kind": "StringValue",
+        "loc": Object {
+          "end": Object {
+            "column": 2,
+            "line": 2,
+          },
+          "start": Object {
+            "column": 1,
+            "line": 1,
+          },
+        },
+        "oldLoc": Object {
+          "end": 33,
+          "start": 0,
+        },
+        "range": Array [
+          0,
+          33,
+        ],
+        "type": "StringValue",
+        "value": " generic query placeholder ",
+      },
+      "directives": Array [],
+      "fields": Array [],
+      "interfaces": Array [],
+      "kind": "ObjectTypeDefinition",
+      "loc": Object {
+        "end": Object {
+          "column": 21,
+          "line": 2,
+        },
+        "start": Object {
+          "column": 1,
+          "line": 1,
+        },
+      },
+      "name": Object {
+        "kind": "Name",
+        "loc": Object {
+          "end": Object {
+            "column": 21,
+            "line": 2,
+          },
+          "start": Object {
+            "column": 16,
+            "line": 2,
+          },
+        },
+        "oldLoc": Object {
+          "end": 56,
+          "start": 51,
+        },
+        "range": Array [
+          51,
+          56,
+        ],
+        "type": "Name",
+        "value": "Query",
+      },
+      "oldLoc": Object {
+        "end": 56,
+        "start": 0,
+      },
+      "range": Array [
+        0,
+        56,
+      ],
+      "type": "ObjectTypeDefinition",
+    },
+  ],
+  "kind": "Document",
+  "loc": Object {
+    "end": Object {
+      "column": 21,
+      "line": 2,
+    },
+    "start": Object {
+      "column": 1,
+      "line": 1,
+    },
+  },
+  "oldLoc": Object {
+    "end": 56,
+    "start": 0,
+  },
+  "range": Object {},
+  "tokens": Array [
+    Object {
+      "column": 1,
+      "end": 33,
+      "kind": "BlockString",
+      "line": 1,
+      "next": null,
+      "prev": Object {
+        "column": 0,
+        "kind": "<SOF>",
+        "line": 0,
+        "value": undefined,
+      },
+      "range": Array [
+        0,
+        33,
+      ],
+      "start": 0,
+      "value": " generic query placeholder ",
+    },
+    Object {
+      "column": 13,
+      "end": 50,
+      "kind": "Name",
+      "line": 2,
+      "next": null,
+      "prev": Object {
+        "column": 1,
+        "kind": "BlockString",
+        "line": 1,
+        "value": " generic query placeholder ",
+      },
+      "range": Array [
+        46,
+        50,
+      ],
+      "start": 46,
+      "value": "type",
+    },
+    Object {
+      "column": 18,
+      "end": 56,
+      "kind": "Name",
+      "line": 2,
+      "next": null,
+      "prev": Object {
+        "column": 13,
+        "kind": "Name",
+        "line": 2,
+        "value": "type",
+      },
+      "range": Array [
+        51,
+        56,
+      ],
+      "start": 51,
+      "value": "Query",
+    },
+  ],
+  "type": "Document",
+}
+`;

@@ -1,0 +1,5 @@
+type CreateOneUserPayload {
+  recordId: MongoID
+
+  record: User
+}
