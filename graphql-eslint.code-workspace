@@ -12,6 +12,19 @@
 		}
 	],
 	"settings": {
-		"git.ignoreLimitWarning": true
-	}
+		"git.ignoreLimitWarning": true,
+		"eslint.alwaysShowStatus": true,
+		"eslint.lintTask.options": ". --ext .js, .graphql",
+		"eslint.validate": [
+			"javascript",
+			"javascriptreact",
+			"typescript",
+			"typescriptreact",
+			"graphql"
+		],
+		"eslint.options": {
+			"extentions": [".js", ".graphql"]
+		}
+	},
+	"eslint.options": {}
 }

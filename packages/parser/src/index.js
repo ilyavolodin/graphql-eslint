@@ -2,16 +2,16 @@ const graphql = require('graphql');
 
 function populateLines(input) {
     const lines = new Map();
-    const list = input.match(/[^\r\n]+/g);
-    let lastLineStart = 0;
+    const list = input.match(/^.*$/gm);
+    let lineStart = 0;
     list.forEach((line) => {
-        lines.set(lastLineStart, line);
-        lastLineStart += line.length;
+        lines.set(lineStart, line);
+        lineStart += line.length + 1;
     });
     return lines;
 }
 
-function getLineColumn(lines, charIndex, eolOffset) {
+function getLineColumn(lines, charIndex) {
     const iterator = lines.entries();
     let prev = null;
     let item = iterator.next();
@@ -26,7 +26,7 @@ function getLineColumn(lines, charIndex, eolOffset) {
     }
     return {
         line: index,
-        column: Math.abs(charIndex - prev.value[0] - eolOffset * index)
+        column: Math.abs(charIndex - prev.value[0])
     };
 }
 
@@ -36,13 +36,12 @@ exports.parseForESLint = function parseForESLint(code, options) {
     const lexer = new graphql.Lexer(source);
     const originalAst = graphql.parse(source, {});
     const comments = [];
-    const eolOffset = /\r\n/.test(code) ? 2 : 1;
     let ast = originalAst;
     try {
         ast = graphql.visit(originalAst, {
             leave(node) {
-                const start = getLineColumn(lines, node.loc.start, eolOffset);
-                const end = getLineColumn(lines, node.loc.end, eolOffset);
+                const start = getLineColumn(lines, node.loc.start);
+                const end = getLineColumn(lines, node.loc.end);
                 const { kind } = node;
                 const newNode = { ...node };
                 if (newNode.type) {

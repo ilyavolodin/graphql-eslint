@@ -31,28 +31,28 @@ module.exports = {
             ObjectTypeDefinition: (node) => {
                 if (context.options[0].types) {
                     if (!node.description || !node.description.value) {
-                        context.report(node, 'Missing description for type');
+                        context.report(node.name, 'Missing description for type');
                     }
                 }
             },
             FieldDefinition: (node) => {
                 if (context.options[0].types) {
                     if (!node.description || !node.description.value) {
-                        context.report(node, 'Missing description for type');
+                        context.report(node.name, 'Missing description for type');
                     }
                 }
             },
             EnumValueDefinition: (node) => {
                 if (context.options[0].enumValues) {
                     if (!node.description || !node.description.value) {
-                        context.report(node, 'Missing description for enum value');
+                        context.report(node.name, 'Missing description for enum value');
                     }
                 }
             },
             InputValueDefinition: (node) => {
                 if (context.options[0].inputOptionsValues) {
                     if (!node.description || !node.description.value) {
-                        context.report(node, 'Missing description for input value');
+                        context.report(node.name, 'Missing description for input value');
                     }
                 }
             }

@@ -13,7 +13,7 @@ module.exports = {
             'max-len': 'off'
         },
     }, {
-        files: ['**/tests/**/*.js'],
+        files: ['**/__tests__/**/*.js'],
         extends: ['airbnb-base'],
         rules: {
             indent: ['error', 4, options],
@@ -23,6 +23,19 @@ module.exports = {
         env: { jest: true }
     }, {
         files: ['*.graphql'],
-        parser: require.resolve('@graphql-eslint/parser')
+        parser: require.resolve('@graphql-eslint/parser'),
+        plugins: ['@graphql-eslint'],
+        rules: {
+            '@graphql-eslint/naming-convention': ['error', {
+                FieldDefinition: 'camelCase',
+                EnumValueDefinition: 'camelCase',
+                InputValueDefinition: 'camelCase',
+                TypeDefinition: 'PascalCase',
+                FragmentDefinition: 'PascalCase',
+                ScalarTypeDefinition: 'PascalCase'
+            }],
+            '@graphql-eslint/require-deprication-reason': ['error'],
+            '@graphql-eslint/require-description': ['error', { types: true, enumValues: true, inputOptionsValues: true }]
+        }
     }]
 };

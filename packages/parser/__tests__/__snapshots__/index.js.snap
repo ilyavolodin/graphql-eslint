@@ -10,11 +10,11 @@ Object {
         "kind": "StringValue",
         "loc": Object {
           "end": Object {
-            "column": 2,
-            "line": 2,
+            "column": 33,
+            "line": 1,
           },
           "start": Object {
-            "column": 1,
+            "column": 0,
             "line": 1,
           },
         },
@@ -35,11 +35,11 @@ Object {
       "kind": "ObjectTypeDefinition",
       "loc": Object {
         "end": Object {
-          "column": 21,
+          "column": 22,
           "line": 2,
         },
         "start": Object {
-          "column": 1,
+          "column": 0,
           "line": 1,
         },
       },
@@ -47,11 +47,11 @@ Object {
         "kind": "Name",
         "loc": Object {
           "end": Object {
-            "column": 21,
+            "column": 22,
             "line": 2,
           },
           "start": Object {
-            "column": 16,
+            "column": 17,
             "line": 2,
           },
         },
@@ -80,11 +80,11 @@ Object {
   "kind": "Document",
   "loc": Object {
     "end": Object {
-      "column": 21,
+      "column": 22,
       "line": 2,
     },
     "start": Object {
-      "column": 1,
+      "column": 0,
       "line": 1,
     },
   },
