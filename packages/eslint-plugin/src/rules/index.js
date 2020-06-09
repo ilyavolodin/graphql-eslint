@@ -1,9 +1,11 @@
 const namingConvention = require('./naming-convention');
-const requireDepricationReason = require('./require-deprication-reason');
+const requireDeprecationReason = require('./require-deprecation-reason');
 const requireDescription = require('./require-description');
+const prettier = require('./prettier');
 
 module.exports = {
     'naming-convention': namingConvention,
-    'require-deprication-reason': requireDepricationReason,
-    'require-description': requireDescription
+    'require-deprecation-reason': requireDeprecationReason,
+    'require-description': requireDescription,
+    prettier
 };

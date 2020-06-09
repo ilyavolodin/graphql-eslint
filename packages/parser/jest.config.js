@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'parser',
+    displayName: 'parser',
     testEnvironment: 'node',
     testRegex: './__tests__/.+\\.js$',
     collectCoverageFrom: ['src/**/*.js'],

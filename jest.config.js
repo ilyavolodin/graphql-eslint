@@ -1,9 +1,7 @@
 module.exports = {
     projects: ['<rootDir>/packages/*/jest.config.js'],
     collectCoverageFrom: ['**/*.js', '!jest.config.js', '!**/coverage/**/*.js'],
-    moduleDirectories: ['node_modules'],
     collectCoverage: true,
-    coverageReporters: ['text-summary', 'lcov'],
     coverageThreshold: {
         global: {
             branches: 80,

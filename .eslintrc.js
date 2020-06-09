@@ -35,7 +35,8 @@ module.exports = {
                 ScalarTypeDefinition: 'PascalCase'
             }],
             '@graphql-eslint/require-deprication-reason': ['error'],
-            '@graphql-eslint/require-description': ['error', { types: true, enumValues: true, inputOptionsValues: true }]
+            '@graphql-eslint/require-description': ['error', { types: true, enumValues: true, inputOptionsValues: true }],
+            '@graphql-eslint/prettier': ['error']
         }
     }]
 };
