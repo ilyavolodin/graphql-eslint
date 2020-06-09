@@ -64,3 +64,7 @@ By default, ESLint VSCode plugin will not lint files with extentions other then 
 # Available Rules
 
 See [plugin](packages/eslint-plugin/README.md) for details
+
+# Known limitations
+
+Currently, ESLint directives through comments are not supported. So there's no way to disable/enable rules inline in your GraphQL code.
