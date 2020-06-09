@@ -1,6 +1,6 @@
 {
   "name": "@graphql-eslint/parser",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "GraphQL parser for ESLint",
   "main": "src/index.js",
   "author": "Ilya Volodin",
