@@ -5,10 +5,28 @@
   "main": "src/index.js",
   "author": "Ilya Volodin",
   "license": "MIT",
+  "files": [
+    "src",
+    "docs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ilyavolodin/graphql-eslint.git",
+    "directory": "packages/plugin-eslint"
+  },
+  "bugs": {
+    "url": "https://github.com/ilyavolodin/graphql-eslint/issues"
+  },
+  "keywords": [
+    "graphql",
+    "eslint",
+    "eslint-plugin"
+  ],
   "scripts": {
     "lint": "eslint .",
     "test": "jest --coverage"
   },
+  
   "devDependencies": {
     "eslint": "^7.2.0",
     "jest": "^26.0.1"
