@@ -32,8 +32,8 @@
     "jest": "^26.0.1"
   },
   "peerDependencies": {
-    "@graphql-eslint/parser": "^0.0.1",
-    "eslint": "^7.2.0"
+    "@graphql-eslint/parser": "^0.1.0",
+    "eslint": "^7.0.0"
   },
   "dependencies": {
     "prettier": "^2.0.5",
