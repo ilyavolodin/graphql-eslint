@@ -34,7 +34,7 @@ module.exports = {
                 FragmentDefinition: 'PascalCase',
                 ScalarTypeDefinition: 'PascalCase'
             }],
-            '@graphql-eslint/require-deprication-reason': ['error'],
+            '@graphql-eslint/require-deprecation-reason': ['error'],
             '@graphql-eslint/require-description': ['error', { types: true, enumValues: true, inputOptionsValues: true }],
             '@graphql-eslint/prettier': ['error']
         }

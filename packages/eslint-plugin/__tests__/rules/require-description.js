@@ -27,7 +27,7 @@ eslintTester.run('require-description', rule, {
         options: [{
             enumValues: true
         }],
-        errors: 3
+        errors: [{ message: 'Missing description for enum value basic' }, { message: 'Missing description for enum value fluent' }, { message: 'Missing description for enum value native' }]
     }, {
         code: getFile('require-description/invalidObject.graphql'),
         options: [{
