@@ -92,14 +92,18 @@ exports.parseForESLint = function parseForESLint(code, options) {
             ScalarTypeDefinition: ['directives', 'name'],
             OperationDefinition: ['variableDefinitions', 'directives', 'selectionSet', 'name'],
             SelectionSet: ['selections', 'name'],
-            Field: ['arguments', 'directiveSet', 'selectionSet', 'name'],
+            Field: ['arguments', 'directive', 'selectionSet', 'name', 'alias'],
             NonNullType: ['fieldType'],
             NamedType: ['name'],
             VariableDefinitions: ['variable', 'type', 'defaultValue', 'directives', 'name'],
             Variable: ['name'],
             Directive: ['name, arguments'],
             Argument: ['name', 'value'],
-            ListType: ['fieldType', 'name']
+            ListType: ['fieldType', 'name'],
+            DirectiveDefinition: ['name', 'arguments', 'locations'],
+            UnionTypeDefinition: ['name', 'types', 'directives'],
+            InterfaceTypeDefinition: ['name', 'fields', 'directives'],
+            InlineFragment: ['typeCondition', 'directives', 'selectionSet']
         }
     };
 };
