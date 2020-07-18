@@ -4,10 +4,10 @@
 # Getting Started
 
 ## Installation
-This repository contains two projects: Parser and Plugin. Both are necessary to install to lint your GraphQL files.
+This repository contains a project that allows you to lint GraphQL files through ESLint.
 
 ```
-npm install @graphql-eslint/parser @graphql-eslint/eslint-plugin --save-dev
+npm install @graphql-eslint/eslint-plugin --save-dev
 ```
 
 ## Configuration
@@ -23,7 +23,7 @@ In order to enable linting you also have to modify your ESLint configuration fil
         // so that JavaScript rules wouldn't try to run on graphQL files
     },{
         files: ['*.graphql'],
-        parser: require.resolve('@graphql-eslint/parser'),
+        parser: require.resolve('@graphql-eslint/eslint-plugin/src/parser'),
         plugins: ['@graphql-eslint'],
         rules: {
             '@graphql-eslint/naming-convention': ['error', {
@@ -46,7 +46,7 @@ It's important that you don't have any rules configured at top level config, and
 
 ## Integrating with VSCode plugin
 
-By default, ESLint VSCode plugin will not lint files with extentions other then js, jsx, ts, tsx. In order to enable it processing other extentions, add the following section in settings.json or workspace configuration.
+By default, ESLint VSCode plugin will not lint files with extensions other then js, jsx, ts, tsx. In order to enable it processing other extensions, add the following section in settings.json or workspace configuration.
 
 ```json
 "eslint.validate": [
@@ -63,7 +63,10 @@ By default, ESLint VSCode plugin will not lint files with extentions other then 
 
 # Available Rules
 
-See [plugin](packages/eslint-plugin/README.md) for details
+* [naming-convention](docs/rules/naming-convention.md) - Rule that enforces naming convention in your code
+* [prettier](docs/rules/prettier.md) - Rule that enforces styling convention in your code
+* [require-deprecation-reason](docs/rules/require-deprecation-reason.md) - Rule that requires all `@deprecated` directives to have a reason
+* [require-description](docs/rules/require-description.md) - Rule that requires descriptions to be present in your code.
 
 # Known limitations
 

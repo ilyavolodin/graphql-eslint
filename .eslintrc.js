@@ -13,17 +13,11 @@ module.exports = {
             'max-len': 'off'
         },
     }, {
-        files: ['**/__tests__/**/*.js'],
-        extends: ['airbnb-base'],
-        rules: {
-            indent: ['error', 4, options],
-            'comma-dangle': 'off',
-            'max-len': 'off'
-        },
+        files: ['__tests__/**/*.test.js'],
         env: { jest: true }
     }, {
         files: ['*.graphql'],
-        parser: require.resolve('@graphql-eslint/parser'),
+        parser: require.resolve('./src/parser/'),
         plugins: ['@graphql-eslint'],
         rules: {
             '@graphql-eslint/naming-convention': ['error', {

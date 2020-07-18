@@ -1,6 +1,7 @@
 module.exports = {
-    projects: ['<rootDir>/packages/*/jest.config.js'],
-    collectCoverageFrom: ['**/*.js', '!jest.config.js', '!**/coverage/**/*.js'],
+    testEnvironment: 'node',
+    collectCoverageFrom: ['src/**/*.js'],
+    coverageReporters: ['text-summary', 'lcov'],
     collectCoverage: true,
     coverageThreshold: {
         global: {
