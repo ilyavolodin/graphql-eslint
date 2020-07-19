@@ -14,7 +14,8 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "publish": "np"
   },
   "bugs": {
     "url": "https://github.com/ilyavolodin/graphql-eslint/issues"
@@ -28,7 +29,8 @@
     "eslint": "^7.4.0",
     "eslint-config-airbnb-base": "14.1.0",
     "eslint-plugin-import": "^2.20.1",
-    "jest": "^26.1.0"
+    "jest": "^26.1.0",
+    "np": "^6.3.2"
   },
   "peerDependencies": {
     "eslint": "^7.0.0"
