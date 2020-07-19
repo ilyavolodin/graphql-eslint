@@ -1,9 +1,0 @@
-input SalaryDecimalOperatorsFilterUpdateOneUserInput {
-    gt: BSONDecimal
-    gte: BSONDecimal
-    lt: BSONDecimal
-    lte: BSONDecimal
-    ne: BSONDecimal
-    in: [BSONDecimal]
-    nin: [BSONDecimal]
-}

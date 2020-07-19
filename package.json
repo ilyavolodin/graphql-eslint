@@ -1,21 +1,41 @@
 {
-  "name": "graphql-eslint",
-  "version": "0.0.1",
+  "name": "@graphql-eslint/eslint-plugin",
+  "version": "0.1.0",
   "description": "GraphQL support for ESLint",
   "main": "index.js",
   "author": "Ilya Volodin",
   "license": "MIT",
-  "private": true,
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ilyavolodin/graphql-eslint.git"
+  },
   "scripts": {
     "lint": "eslint .",
     "test": "jest --coverage"
   },
-  "workspaces": [
-    "packages/*"
+  "bugs": {
+    "url": "https://github.com/ilyavolodin/graphql-eslint/issues"
+  },
+  "keywords": [
+    "graphql",
+    "eslint",
+    "eslint-plugin"
   ],
   "devDependencies": {
-    "eslint": "^7.2.0",
+    "eslint": "^7.4.0",
     "eslint-config-airbnb-base": "14.1.0",
-    "eslint-plugin-import": "^2.20.1"
+    "eslint-plugin-import": "^2.20.1",
+    "jest": "^26.1.0"
+  },
+  "peerDependencies": {
+    "eslint": "^7.0.0"
+  },
+  "dependencies": {
+    "graphql": "^15.3.0",
+    "prettier": "^2.0.5",
+    "prettier-linter-helpers": "^1.0.0"
   }
 }

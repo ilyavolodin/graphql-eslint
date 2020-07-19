@@ -1,5 +1,0 @@
-enum EnumUserLanguagesSkill {
-  basic
-  fluent
-  native
-}

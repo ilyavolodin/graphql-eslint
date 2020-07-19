@@ -1,0 +1,8 @@
+" Test "
+type CreateOneUserPayload {
+  "Created document ID"
+  recordId: MongoID
+
+  "Created document"
+  record: User
+}
