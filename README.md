@@ -1,5 +1,4 @@
-# Disclaimer
-**This repo is an early alpha version, use at your own risk. Feedback and bug reports are welcome**
+# This repository is merged with https://github.com/dotansimha/graphql-eslint and depricated
 
 # Getting Started
 
